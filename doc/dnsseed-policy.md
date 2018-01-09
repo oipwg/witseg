@@ -48,4 +48,6 @@ Core development team.
 Behavior outside of these expectations may be reasonable in some
 situations but should be discussed in public in advance.
 
-
+See also
+----------
+- [litecoin-seeder](https://github.com/pooler/litecoin-seeder) is a reference implementation of a DNS seed.
