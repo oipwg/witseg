@@ -429,6 +429,23 @@ QString TransactionTableModel::formatTxToAddress(const TransactionRecord *wtx, b
     }
 }
 
+QString TransactionTableModel::formatTxComment(const TransactionRecord *wtx, bool tooltip) const
+{
+    switch(wtx->type)
+    {
+    case TransactionRecord::RecvFromOther:
+    case TransactionRecord::RecvWithAddress:
+    case TransactionRecord::SendToAddress:
+    case TransactionRecord::SendToOther:
+    case TransactionRecord::SendToSelf:
+        return QString::fromStdString(wtx->txcomment);
+    case TransactionRecord::Generated:
+        return "";
+    default:
+        return tr("(n/a)");
+    }
+}
+
 QVariant TransactionTableModel::addressColor(const TransactionRecord *wtx) const
 {
     // Show addresses without label in a less visible color
