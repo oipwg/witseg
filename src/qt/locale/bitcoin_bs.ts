@@ -14,8 +14,8 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>Florincoin</source>
-        <translation>Florincoin</translation>
+        <source>FLO</source>
+        <translation>FLO</translation>
     </message>
     </context>
 <context>
@@ -156,8 +156,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Florincoin Core</source>
-        <translation>Florincoin Jezrga</translation>
+        <source>FLO Core</source>
+        <translation>FLO Jezrga</translation>
     </message>
     </context>
 </TS>
